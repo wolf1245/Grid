@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(42, 228, 203);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.elem{
+    border-radius: 5px;
+    border: 1px solid beige;
+    padding: 10px;
+    background-color: rgb(109, 202, 47);
+}
+.elem:nth-child(2n){
+    background-color: rgb(126, 61, 38);
+}
+.subgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2px;
+    justify-content: flex-end;
+}
+.subgrib-elem{
+    border-radius: 2px;
+    border: 1px solid beige;
+    padding: 2px;
+    background-color: rgb(174, 177, 20);
+}
+.subgrib-elem:nth-child(2n){
+    background-color: rgb(10, 48, 216);
+}
